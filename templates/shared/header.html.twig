@@ -1,0 +1,149 @@
+{% block header %}
+    <div class="top-container section">
+        <img src="{{ asset('images/Logo_final.svg') }}" alt="logo">
+        <div class="sections-titles">
+            <h1>Coaching Physique ET Mental</h1>
+            <h3>Atteint tes objectifs et soit plus forte !</h3>
+        </div>
+    </div>
+    <header id="myheader">
+        <nav id="desktop-navbar" class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+                <ul class="navbar-nav nav nav-pills container-fluid">
+                    <li class="nav-item"><a class="btn btn-lg home" href="{{ path('app_index') }}">Accueil</a></li>
+                    <li class="nav-item"><a class="btn btn-lg amal-concept" href="{{ path('app_index') }}#amal-concept">Mon Concept</a></li>
+                    <li class="nav-item"><a class="btn btn-lg for-who" href="{{ path('app_index') }}#for-who">Pour Qui ?</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="btn btn-lg dropdown-toggle amal-description" href="{{ path('app_index') }}#amal-description" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            A propos de moi
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="{{ path('app_index') }}#amal-description">Qui suis-je ?</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="{{ path('app_index') }}#testimonial">Témoignages</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="btn btn-lg dropdown-toggle disciplines" href="#disciplines" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Disciplines
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li hidden><a class="dropdown-item" href="{{ path('app_index') }}#disciplines"></a></li>
+                            <li><a class="dropdown-item" href="{{ path('app_taekwondo') }}">Taekwondo</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="{{ path('app_crossfight') }}">Crossfight</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="{{ path('app_muaythai') }}">Boxe Thaï</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="{{ path('app_index') }}#image-gallery">Galerie d'images</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="btn btn-lg prestations" href="{{ path('app_index') }}#prestations">Prestations</a></li>
+                    <li class="nav-item"><a class="btn btn-lg contact" href="{{ path('app_contact') }}#contact">Contact</a></li>
+                    <li class="nav-item disabled"><a class="btn btn-lg disabled" href="#">Réservation</a></li>
+                    <li class="nav-item"><a class="btn btn-lg btn-outline-dark button" href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop" role="button">Offre d'essai</a></li>
+                    <li class="nav-item">
+                        <div class="dropdown et-hero-tab">
+                            <button class="btn btn-secondary btn-lg dropdown-toggle disabled" id="dropdownMenu"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="far fa-user-circle"></i><span>Mon compte</span>
+                            </button>
+                            <ul id="dropdownMenUser" class="dropdown-menu" aria-labelledby="dropdownMenUser">
+                                <li><a class="dropdown-item disabled" href="{{ path('app_login') }}"><i class="fas fa-sign-in-alt mr-2"></i> Connexion</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item disabled" href="{{ path('app_register') }}"><i class="fas fa-user-plus"></i> Inscription</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!--MOBILE NAV-->
+        <div id="mobile-nav">
+            <ul>
+                <li class="dropdown">
+                    <input type="checkbox"/>
+                    <a href="#" data-toggle="dropdown">Menu</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="btn btn-lg home" href="{{ path('app_index') }}">Accueil</a></li>
+                        <li><a class="btn btn-lg amal-concept" href="{{ path('app_index') }}#amal-concept">Mon Concept</a></li>
+                        <li><a class="btn btn-lg for-who" href="{{ path('app_index') }}#for-who">Pour Qui ?</a></li>
+                        <li class="dropdown dropend">
+                            <a class="btn btn-lg dropdown-toggle amal-description" href="{{ path('app_index') }}#amal-description" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                A propos de moi
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="{{ path('app_index') }}#amal-description">Qui suis-je ?</a></li>
+                                <li><a class="dropdown-item" href="{{ path('app_index') }}#testimonial">Témoignages</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown dropend">
+                            <a class="btn btn-lg dropdown-toggle disciplines" href="{{ path('app_index') }}#disciplines" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Disciplines
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="{{ path('app_taekwondo') }}">Taekwondo</a></li>
+                                <li><a class="dropdown-item" href="{{ path('app_crossfight') }}">Crossfight</a></li>
+                                <li><a class="dropdown-item" href="{{ path('app_muaythai') }}">Boxe Thaï</a></li>
+                                <li><a class="dropdown-item" href="{{ path('app_index') }}#image-gallery">Galerie d'images</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="btn btn-lg prestations" href="{{ path('app_index') }}#prestations">Prestations</a></li>
+                        <li><a class="btn btn-lg contact" href="{{ path('app_contact') }}#contact">Contact</a></li>
+                        <li class="disabled"><a class="btn btn-lg disabled" href="#">Réservation</a></li>
+                        <li>
+                        <li class="nav-item"><a class="btn btn-lg btn-outline-dark button" href="" role="button">Offre d'essai</a></li>
+                        <li>
+                            <div class="dropdown dropend et-hero-tab">
+                                <button class="btn btn-secondary btn-sm dropdown-toggle disabled" id="dropdownMenu"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="far fa-user-circle"></i><span>Mon compte</span>
+                                </button>
+                                <ul id="dropdownMenUser" class="dropdown-menu" aria-labelledby="dropdownMenUser">
+                                    <li><a class="dropdown-item disabled" href="{{ path('app_login') }}"><i class="fas fa-sign-in-alt pr-2"></i> Connexion</a></li>
+                                    <li><a class="dropdown-item disabled" href="{{ path('app_register') }}"><i class="fas fa-user-plus"></i> Inscription</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="true" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog  modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">OFFRE D'ESSAI</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Offre de lancement à ne pas manquer ! <br>Pour les 20 premières inscrites une session de découverte d'une valeur de
+                        300 DIN vous sera offerte. <br>
+                        Dans n'importe quelle des disciplines. Je vous attends avec impatience !
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Fermer</button>
+                        <button type="button" class="btn btn-success"><a href=""></a>Super je réserve !</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+{% endblock %}
+
+{% block javascipts %}
+
+{% endblock %}

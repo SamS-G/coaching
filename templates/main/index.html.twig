@@ -1,0 +1,322 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Amal Tay Coaching{% endblock %}
+
+{% block body %}
+    <body id="home">
+        <div id="fb-root"></div>
+    <main>
+        <section id="amal-concept" class="flex-c">
+            <div class="col-xl-6 col-lg-12 col-md-12 concept">
+                <div class="sections-titles">
+                    <h2>Amal Tay Coaching</h2>
+                    <h3>Que vais-je trouver ici ?</h3>
+                </div>
+                <p>Tout ce que vous devez savoir et ce dont vous avez besoin pour vous lancer si vous hésitez encore sur tous les avantages et les bienfaits d'un coaching sportif particulier.
+                    Peut-être aussi avez vous besoin d'augmenter votre niveau physique ou technique en tant que pratiquante aguerri ?
+                    Dans les deux cas vous avez frappé à la bonne porte !
+                    Mais avez la possibilité de savoir qui je suis, quelles sont mes valeurs, mes méthodes. Ce que je voudrais surtout vous transmettre c'est ma passion et mon amour du sport et notamment ceux de combat.
+                    Vous l'aurez peut-être deviné dans ces quelques mots que j'ai choisi de n'entraîner <strong>que des femmes</strong>.Alors désolé messieurs :) mais je saurai vers qui vous renvoyer si vous cherchez quelqu'un de confiance.
+                    Vous êtes prêtes alors ont y va !
+                </p>
+            </div>
+        </section>
+        <section id="for-who" class="flex-c ">
+            <div class="flex-r">
+                <div class="col-xl-4 col-lg-12 for-who-img">
+                    <img src="{{ asset('images/crossfight-coaching-marche.jpg') }}" alt="exercice coaching" class="img-fluid"/>
+                </div>
+                <div class="col-xl-7 col-lg-12">
+                    <div class="centering">
+                        <div class="sections-titles">
+                            <h2>Pour Qui ?</h2>
+                            <h3>Est-ce c'est fait pour moi ?</h3>
+                        </div>
+                        <div>
+                            <p>Sortons tout de suite des clichés:</p>
+                            <ul>
+                                <li>- <strong>oui</strong> le sport c'est fait pour tout le monde (notre organisme est conçu pour ça),</li>
+                                <li> - <strong>non</strong> les sports de combat ne sont pas violents, on ne se blesse pas.</li>
+                            </ul>
+                            <p>
+                                Pas besoin d'être une athlète de haut niveau pour prendre des cours en coaching individuel. Tout le monde a sa place. <br>
+                                Grâce à un programme que j'élabore celon VOTRE parcours. <br>
+                                Vous vous reconnaissez peut-être en tant que femme :</p>
+                            <ul>
+                                <li>- qui sort d'un accouchement ?</li>
+                                <li>- qui a arrêté toute activité sportive depuis longtemps ?</li>
+                                <li>- qui a des objectifs de perte ou de maintiens de poids ?</li>
+                                <li>- Ou peut-être qui a des ambitions en compétition dans son sport ?</li>
+                            </ul>
+                            <p>
+                                Alors mes cours sont fait <em>pour Vous !</em> <br>
+                                <strong>Tout le monde a droit aux bienfaits du Sport ! Le Plaisir, la Bonne Humeur et le Dynamisme en plus.</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="amal-description" class="flex-c ">
+            <div class="amal-skills flex-r">
+                <div class="card col-xl-4 col-lg-12">
+                    <img src="{{ asset('images/taekwondo-kimono-profil.jpg') }}" class="card-img-top" alt="femme en kimono et voilée de profile">
+                    <div class="amal-card-body">
+                        <h2 class="card-title">Amal Tay</h2>
+                        <p class="card-text">
+                                <span>Je suis très facilement joignable surtout par <em>Whats App</em> alors n'hésitez pas je serai ravie de répondre à toutes vos questions.
+                                Abonnez-vous à mes Pages Facebook et Instagram et partagez avec les autres élèves, partagez vos expériences, soutenez-vous, motivez-vous !
+                                </span>
+                        </p>
+                        <div class="social-container flex-r">
+                            <a href="https://www.facebook.com/Amal.Tay.Marrakech/"><i class="fab fa-facebook-square fa-lg"></i></a><a href="https://www.instagram.com/amal.tay_coaching/"><i class="fab fa-instagram-square fa-lg"></i></a><a
+                                    href="https://wa.me/0627686416"><i class="fab fa-whatsapp-square fa-lg"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills col-xl-7 col-lg-12">
+                    <div class="sections-titles">
+                        <h2>Qui suis-je ?</h2>
+                        <h3>Je me présente à vous</h3>
+                    </div>
+                    <div class="skills-tabs">
+                        <!-- Tab items -->
+                        <div class="tabs">
+                            <div class="tab-1 tab-item active col-lg-4">
+                                <i class="fas fa-book-reader"></i>
+                                Biographie
+                            </div>
+                            <div class="tab-item col-lg-4">
+                                <i class="far fa-list-alt"></i>
+                                Mes compétences
+                            </div>
+                            <div class="line"></div>
+                        </div>
+                        <!-- Tab content -->
+                        <div class="tab-content">
+                            <div class="tab-pane active">
+                                <h2>Biographie</h2>
+                                <p>Moi, c'est Amal.
+                                    Originaire de Lyon, j’ai toujours été très attirée par les sports en collectivité tels que le football, le basket-ball. Mais très vite les arts martiaux ont été pour moi une révélation.
+                                    C'est pourquoi après avoir pratiqué différents sports je me suis tout naturellement dirigée à l'âge de 17 ans vers le Taekwondo.
+                                    J'ai tout de suite su que ce sport était fait pour moi !
+                                    Mon amour pour cette discipline était tel que je ne passais pas un jour sans m'entraîner.
+                                    Cela a payé puisqu'après plusieurs podiums en compétition, j'ai obtenu le titre de Championne de France.
+                                    Cela m'a ouvert les portes pour intégrer l'équipe de France de Taekwondo et j'ai ainsi participé à plusieurs compétitions internationales.
+                                    En parallèle, j'ai continué à perfectionner ma technique et j'ai obtenu ma ceinture noire 2ème dan ce qui m'a permis de transmettre mon savoir aux adultes et aux enfants.
+                                    Dix ans passants, j'ai voulu me lancer d'autres défis dans des disciplines où m'a mené le destin, le kickboxing, le muaythai et k1, que j'ai pratiqué de longues années.
+                                    Quelques temps plus tard, une opportunité de pouvoir entraîner une session exclusivement réservé aux femmes tout en donnant des cours particuliers s'est ouverte à moi.
+                                    Mes cours étaient basés sur le renforcement cardio et musculaires tout en forgeant le mental de mes élèves.
+                                    Et maintenant, me voilà à Marrakech pour de nouvelles aventures avec vous !
+                                </p>
+                            </div>
+                            <div class="tab-pane">
+                                <div class="skills-tab">
+                                    <h2>Compétences</h2>
+                                    <ul>
+                                        <li>- Ceinture noire 2 ième dan de Taekwondo</li>
+                                        <li>- Championne de France de Taekwondo</li>
+                                        <li>- 10 ans d'expérience en boxe pied/poings</li>
+                                        <li>- 20 ans de pratique des sports de combat</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="amal-mindset">
+                        <div class="sections-titles">
+                            <h2>Mon approche, mes valeurs</h2>
+                        </div>
+                        <div class="amal-word col-lg-6">
+                            <blockquote><i class="fa fa-quote-left fa-2x" aria-hidden="true"></i>
+                                Pour moi entraîner c'est plus qu'un travail. Durant toutes ces années j'ai vu des personnes qui venaient timidement et n'osaient pas franchir le pas de s'entraîner et de découvrir ce que sont
+                                réellement ces magnifiques disciplines.
+                                Mais une fois ces première appréhensions passées je les aies vues épanouies et sûres d'elles. Je ne peux que me réjouir et être satisfaite d'avoir été le moteur de leur changement.
+                                Mes valeurs et mon parcours font de moi que je suis très soucieuse de ce que peuvent vivre les femmes à notre époque. Elles sont très sollicitées, et j'aimerai pouvoir faire partie de vos petit moment
+                                d'évasion...<br> <br>
+                                <i>AMAL TAY</i>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="testimonial" class="flex-c ">
+            <div class="sections-titles">
+                <h2>Témoignages</h2>
+                <h3>Ce qu'ont vécu mes clients</h3>
+            </div>
+            <div class="testimonials text-center">
+                <div class="card text-center">
+                    <i class="fas fa-quote-right fa-3x"></i>
+                    <div class="card-body blockquote">
+                        <p class="card-text">
+                            Quand je me suis inscrite j'avais des doutes sur ma capacité dans un sport de combat. Finalement mes doutes et mes peurs se sont dissipées grâce à Amel qui m'a e fait travailler aussi bien le physique que
+                            le mental. Sérieuse, appliquée et passionnée,sa détermination et sa motivation m'ont aidé à me dépasser et à sortir de ma zone de confort.
+                            J'ai rapidement pu perdre du poids je me sens plus forte .
+                            C'est une femme forte et douce à la fois, très à l'écoute.
+                        </p>
+                        <footer class="blockquote-footer"><cite title="Source Title">Jamila</cite></footer>
+                    </div>
+                </div>
+                <div class="card text-center">
+                    <i class="fas fa-quote-right fa-3x"></i>
+                    <div class="card-body blockquote">
+                        <p class="card-text"> Un petit bout de femme très pro, à l’écoute de vos besoins et de vos demandes.
+                            J’ai eu beaucoup de chance de pouvoir prendre des cours avec Amel avec en bonus
+                            des résultats rapides et concrets. C’était intense mais quel plaisir pris dans ces efforts !
+                            Moi je vous le recommande à 10 000 % !! N’hésitez pas lancez-vous et vous ne serez pas déçu.</p>
+                        <footer class="blockquote-footer"><cite title="Source Title">Cathy</cite></footer>
+                    </div>
+                </div>
+                <div class="card text-center">
+                    <i class="fas fa-quote-right fa-3x"></i>
+                    <div class="card-body blockquote">
+                        <p class="card-text">Amel est une coach consciencieuse et impliquée dans notre progression. Pour moi ce fut fulgurant. J'ai réussi, grâce a ses coaching, à perdre une taille, de manière fulgurante, en
+                            seulement deux séances en alliant le sport et ses conseils en nutrition .
+                            Amel n'est pas seulement une coach sportif mais aussi une oreille bienveillante et son travail est VOTRE bien-être.
+                            Elle cible vos besoins et vous fera travailler de manière intensive faites lui confiance et même si c'est dur ! Laissez vous guider pendant vos
+                            séances et misez sur votre bien-être. C'est une personne aux valeurs exceptionnelle:
+                            travail,rigueur, écoute, attention...
+                            Merci Amel pour tous se que tu m'a apporté merci de m'avoir donné le goût de l'effort et du dépassements de soit.
+                        </p>
+                        <footer class="blockquote-footer"><cite title="Source Title">Dadida</cite></footer>
+                    </div>
+
+                </div>
+                <div class="card text-center">
+                    <i class="fa fa-quote-left fa-3x card-img-top rounded-circle" aria-hidden="true"></i>
+                    <div class="card-body blockquote">
+                        <p class="card-text">
+                            Amel est une coach dynamique et professionnelle. motivante elle pousse au dépassement de soi.
+                            Avec bonne humeur et humour
+                            Les cours sont biens encadrés. Elle donne des cours avec beaucoup de passion.
+                            Je vous recommande Amel,
+                            car séance après séances les résultats sont au rendez-vous...
+                        </p>
+                        <footer class="blockquote-footer"><cite title="Source Title">Leila</cite></footer>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section id="disciplines" class="flex-c section">
+            <div class="sections-titles">
+                <h2>Les Disciplines</h2>
+                <h3>Choisi selon tes affinités</h3>
+            </div>
+            <div class="flex-r">
+                <div class='col-md-3 discipline-card'>
+                    <div class='img-cont'>
+                        <span class='drop-down-window'><a href="{{ path('app_taekwondo') }}"><img class="glove" src="{{ asset('images/boxing_gloves.png') }}" alt="boxing-gloves"><br>FIGHT !</a></span>
+                        <img class='img img-fluid' src="{{ asset('images/pied-retourné-taekwondo.jpg') }}" alt="side-kick">
+                    </div>
+                    <div class='content-cont'>
+                        <span class='card-disciplines-header'><img src="{{ asset('images/Flag_of_South_Korea.svg.png') }}" alt="Flag_of_South_Korea"></span>
+                        <span class='card-body'>TAEKWONDO</span>
+                    </div>
+                </div>
+
+                <div class='col-md-3 discipline-card'>
+                    <div class='img-cont'>
+                        <span class='drop-down-window'><a href="{{ path('app_crossfight') }}"><img src="{{ asset('images/boxing_gloves.png') }}" alt="boxing-gloves"><br>FIGHT !</a></span>
+                        <img class='img img-fluid' src="{{ asset('images/barre-avec-poids.jpg') }}" alt="barre de musculation">
+                    </div>
+                    <div class='content-cont'>
+                        <span class='card-disciplines-header'><img src="{{ asset('images/Flag_of_the_United_States.svg.png') }}" alt="Flag_of_the_United_States"></span>
+                        <span class='card-body'>CROSSFIGHT</span>
+                    </div>
+                </div>
+
+                <div class='col-md-3 discipline-card'>
+                    <div class='img-cont'>
+                        <span class='drop-down-window'><a href="{{ path('app_muaythai') }}"><img src="{{ asset('images/boxing_gloves.png') }}" alt="boxing-gloves"><br>FIGHT !</a></span>
+                        <img class='img img-fluid' src="{{ asset('images/combat-muay-thai.jpg') }}" alt="">
+                    </div>
+                    <div class='content-cont'>
+                        <span class='card-disciplines-header'><img src="{{ asset('images/Flag_of_Thailand.svg.png') }}" alt="Flag_of_Thailand"></span>
+                        <span class='card-body'>BOXE THAI</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="prestations">
+            <div class="sections-titles">
+                <h2>Prestations</h2>
+            </div>
+            <div class="body">
+                <div class="wrapper col-lg-6">
+                    <input type="radio" name="slider" id="tab-1">
+                    <input type="radio" name="slider" id="tab-2" checked>
+                    <input type="radio" name="slider" id="tab-3">
+                    <header>
+                        <label for="tab-1" class="tab-1">Individuel</label>
+                        <label for="tab-2" class="tab-2">Groupe</label>
+                        <label for="tab-3" class="tab-3">Étudiante</label>
+                        <div class="slider"></div>
+                    </header>
+                    <div class="card-area">
+                        <div class="cards">
+                            <div class="row row-1">
+                                <div class="price-details">
+                                    <span class="price">295<i>DH</i></span>
+                                    <p>Forfait individuel ou en groupe.</p>
+                                </div>
+                                <ul class="features">
+                                    <li><i class="fas fa-check"></i><span><strong>295 dh / séance</strong></span></li>
+                                    <li><i class="fas fa-check"></i><span><strong>3 séance à 795 dh au lieu de 885 dh</strong></span></li>
+
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <div class="price-details">
+                                    <span class="price">195 <i>DH</i></span>
+                                    <p>Formule groupe (4 personnes mini.).</p>
+                                </div>
+                              
+                            </div>
+                            <div class="row row-2">
+                                <div class="price-details">
+                                    <span class="price">195 <i>DH</i></span>
+                                    <p>Forfait étudiante individuel ou en groupe au mois.</p>
+                                </div>
+                                <ul class="features">
+                                    <li><i class="fas fa-check"></i><span><strong>195 dh / séance</strong></span></li>
+                                    <li><i class="fas fa-check"></i><span><strong>3 cours pour 500 dh au lieu de 585 dh</strong></span></li>
+                                    <li><i class="fas fa-check"></i><span><strong>Formule groupe 4 pers. mini. 150 dh / personne</strong></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="image-gallery" class="flex-c ">
+            <div class="sections-titles">
+                <h2>Galerie images</h2>
+            </div>
+            <div class="image-gallery">
+                <ul>
+                    <li><img class="little" src="{{ asset('images/little/boxe-garde.jpg') }}" alt=""></li>
+                    <li><img class="little" src="{{ asset('images/little/boxe-low-kick-sac.jpg') }}" alt=""></li>
+                    <li><img class="little" src="{{ asset('images/little/boxe-middle-kick-sac.jpg') }}" alt=""></li>
+                    <li><img class="little" src="{{ asset('images/little/boxe-sac.jpg') }}" alt=""></li>
+                    <li><img class="little" src="{{ asset('images/little/crossfit-barre-halterophilie.jpg') }}" alt=""></li>
+                    <li><img class="little" src="{{ asset('images/little/crossfit-corde.jpg') }}" alt=""></li>
+                    <li><img class="little" src="{{ asset('images/little/crossfit-echelle.jpg') }}" alt=""></li>
+                    <li><img class="little" src="{{ asset('images/little/crossfit-marche-coaching.jpg') }}" alt=""></li>
+                    <li><img class="little" src="{{ asset('images/little/taekwondo-front-kick-3_4.jpeg') }}" alt=""></li>
+                    <li><img class="little" src="{{ asset('images/little/taekwondo-poings-face.jpeg') }}" alt=""></li>
+                    <li><img class="little" src="{{ asset('images/little/taekwondo-salut.jpeg') }}" alt=""></li>
+                    <li><img class="little" src="{{ asset('images/little/taekwondo-side-kick-sauté.jpeg') }}" alt=""></li>
+                    <li>
+                        <div class="big"></div>
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+    </main>
+    </body>
+{% endblock %}
+

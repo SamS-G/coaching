@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+
+Sitemap: http://amaltaycoaching.com/public/sitemap.xml

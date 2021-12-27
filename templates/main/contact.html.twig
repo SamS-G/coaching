@@ -1,0 +1,45 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Contact{% endblock %}
+
+{% block body %}
+    {% for message in app.flashes('success') %}
+        <div id="success" class="alert alert-success text-center font-weight-bold">
+            {{ message | raw }}
+        </div>
+        {% for message in app.flashes('error') %}
+            <div id="error" class="alert alert-danger text-center font-weight-bold">
+                {{ message | raw }}
+            </div>
+        {% endfor %}
+    {% endfor %}
+
+    <section id="contact" class="container">
+        <div class="sections-titles">
+            <h2>Formulaire de contact</h2>
+        </div>
+        <div class="contact-coo flex-r">
+            <div><i class="fas fa-phone-alt fa-2x"></i><br><p>06.27.68.64.16</p></div>
+            <div><i class="fas fa-map-marker-alt fa-2x"></i><br><p>MARRAKECH</p></div>
+            <div><i class="far fa-envelope fa-2x"></i><br><p>amaltay@amaltaycoaching.com</p></div>
+        </div>
+        <div class="contact_form">
+            <div class="form-group">
+                {% if form is defined %}
+                {{ form_start(form) }}
+                {{ form_row(form.nom, {'attr':{'class':'form-control'}}) }}
+            </div>
+            <div class="form-group">
+                {{ form_row(form.email, {'attr':{'class':'form-control'}}) }}
+            </div>
+            <div class="form-group">
+                {{ form_row(form.message, {'attr':{class:'form-control'}}) }}
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Envoyer" class="btn btn-lg btn-success">
+            </div>
+            {{ form_end(form) }}
+            {% endif %}
+        </div>
+    </section>
+{% endblock %}

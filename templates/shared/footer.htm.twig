@@ -1,0 +1,52 @@
+{% block footer %}
+    <footer>
+        <hr>
+        <div class="contacts">
+            <div class="contact_details">
+                <h3>Amal Tay</h3>
+                <ul>
+                    <li><a href="tel:0627686416"><i class="fas fa-phone-square"></i></i></a></li>
+                    <li><a href="https://wa.me/0627686416"><i class="fab fa-whatsapp fa-w-18"></i></a></li>
+                    <li><a href="mailto:amal@amaltaycoaching.com"><i class="far fa-envelope fa-w-18"></i></a></li>
+                </ul>
+            </div>
+            <div class="address">
+                <i class="fas fa-map-marker-alt fa-lg"></i>
+                <address>
+                    40000 Marrakech
+                </address>
+            </div>
+            <div class="schedules">
+                <h3>Horaires</h3>
+                <p>Lundi-Samedi : 7H-20H</p>
+            </div>
+        </div>
+        <div><h3 class="text-center">Une création <a href="https://webconceptions.fr">Web Conceptions.fr</a></h3></div>
+        {% if data is defined %}
+            <hr>
+            <div class="social-flux flex-r">
+                <div class="col-lg-12 col-xl-3">
+                    <h4>FACEBOOK</h4>
+                    <div class="timeline">
+                        <div class="fb-page" data-href="https://www.facebook.com/Amal.Tay.Marrakech" data-tabs="timeline" data-width="480" data-height="500" data-small-header="false" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="true"></div>
+                    </div>
+                </div>
+                <div class="col-xl-8 col-lg-12 instagram">
+                    <h4>INSTAGRAM</h4>
+                    <div class="insta-img">
+                        {% for type, items in data %}
+                            {% for key, value in items %}
+                                {% if value.media_url is defined %}
+                                    <img class="img-fluid" src="{{ value.media_url }}" alt="">
+                                {% else %}
+                                    <img src="" alt="">
+                                {% endif %}
+                            {% endfor %}
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        {% else %}
+        {% endif %}
+    </footer>
+{% endblock %}

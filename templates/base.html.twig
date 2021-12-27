@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Coaching sportif et mental individuel, préparation physique, entaînements collectifs" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="google-site-verification" content="VQxNW_AWDoZqUwXFdOpcZDQ7B3DQB3gyY6WYdGkulNs" />
+    <meta content="index,follow" name="robots">
+    <meta content="fr_FR" property="og:locale"/>
+    <meta content="Coaching sportif et mental individuel, préparation physique, entaînements collectifs." property="og:description"/>
+    <meta content="Coaching sportif et mental individuel, préparation physique, entaînements collectifs." property="og:title"/>
+    <meta content="website" property="og:type"/>
+    <meta content="#" property="og:image"/>
+    <meta content="100%" property="og:image:width"/>
+    <meta content="100%" property="og:image:height"/>
+    <meta content="https://amaltaycoaching.com" property="og:url"/>
+    <meta content="webconceptions.fr" name="author">
+    <link href="https://amaltaycoaching.com" rel="canonical">
+    
+    <title>{% block title %}Amal Tay Coaching{% endblock %}</title>
+
+    {% block stylesheets %}
+        <link rel="shortcut icon" type="image/x-icon" href="{{ asset('public/images/favicon.png') }}">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href="{{ asset('public/css/style.css') }}" rel="stylesheet"/>
+        <link href="{{ asset('public/css/responsive.css') }}" rel="stylesheet"/>
+    {% endblock %}
+
+    {% block javascripts %}
+        <script src="{{ asset('public/jquery-3.6.0.min.js') }}"></script>
+        <script src="{{ asset('public/js/sticky-header.js') }}"></script>
+        <script src="{{ asset('public/js/tabs.js') }}"></script>
+        <script src="{{ asset('public/js/lightingBox.js') }}"></script>
+        <script src="{{ asset('public/js/scroll_spy.js') }}"></script>
+        <script src="{{ asset('public/js/responsive.js') }}"></script>
+        <script async src="https://kit.fontawesome.com/11f79c9fc2.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v12.0" nonce="A4qmDweM"></script>
+    {% endblock %}
+</head>
+
+
+{% block header %} {% include 'shared/header.html.twig' %}{% endblock %}
+
+
+{% block body %}{% endblock %}
+
+{% block footer %}{% include'shared/footer.htm.twig' %}{% endblock %}
+
+</html>
+
+<!--//TODO modifier les url images/js/style vers /public pour la prod.-->

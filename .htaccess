@@ -1,0 +1,25 @@
+#RewriteOptions inherit
+#RewriteEngine on
+#RewriteCond %{HTTP_HOST} ^.*$
+#RewriteRule ^/?$ "https\:\/\/amaltaycoaching\.com\/public" [R=301,L]
+
+
+RewriteEngine On
+
+
+
+# OK AMAL
+
+#RewriteCond %{REQUEST_URI} ^/$
+#RewriteRule (.*) /public [R=301,L]
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+
+#FIN
+
+
+
+RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+RewriteRule ^ http://%1%{REQUEST_URI} [NE,R=301,L]
+RewriteCond %{HTTP_HOST} ^(www\.)?amaltaycoaching\.com$
+RewriteRule !^public/ /public%{REQUEST_URI}  [L]

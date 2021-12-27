@@ -1,0 +1,104 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Réservation rendez-vous{% endblock %}
+{% form_theme form 'bootstrap_5_layout.html.twig' %}
+{% block body %}
+    <section id="scheduling" data-spy>
+        <h2>Réservation en ligne</h2>
+        <div class="container">
+            <form action="">
+                {{ form_start(form) }}
+
+                {% if user.firstname is defined %}
+
+                    <div class="mb-3">
+                        {{ form_label(form.firstname, {'value':user.firstname}) }}
+                        {{ form_widget(form.firstname, {'value':user.firstname}) }}
+                    </div>
+                    <div class="mb-3">
+                        {{ form_label(form.firstname, {'value':user.lastname}) }}
+                        {{ form_widget(form.lastname, {'value':user.lastname}) }}
+                    </div>
+
+                    <div class="mb-3">
+                        {{ form_label(form.street, {'value':user.street}) }}
+                        {{ form_widget(form.street, {'value':user.street}) }}
+                    </div>
+                    <div class="mb-3">
+                        {{ form_label(form.zip_code, {'value':user.zipcode}) }}
+                        {{ form_widget(form.zip_code, {'value':user.zipcode}) }}
+                    </div>
+                    <div class="mb-3">
+                        {{ form_label(form.city, {'value':user.city}) }}
+                        {{ form_widget(form.city, {'value':user.city}) }}
+                    </div>
+                    <div class="mb-3">
+                        {{ form_label(form.email, {'value':user.email}) }}
+                        {{ form_widget(form.email, {'value':user.email}) }}
+                    </div>
+                    <div class="mb-3">
+                        {{ form_label(form.phone, {'value':user.phone}) }}
+                        {{ form_widget(form.phone, {'value':user.phone}) }}
+                    </div>
+
+                {% else %}
+                    <div class="mb-3">
+                        {{ form_label(form.firstname) }}
+                        {{ form_widget(form.firstname) }}
+                    </div>
+                    <div class="mb-3">
+                        {{ form_label(form.firstname) }}
+                        {{ form_widget(form.lastname) }}
+                    </div>
+
+                    <div class="mb-3">
+                        {{ form_label(form.street) }}
+                        {{ form_widget(form.street) }}
+                    </div>
+                    <div class="mb-3">
+                        {{ form_label(form.zip_code) }}
+                        {{ form_widget(form.zip_code) }}
+                    </div>
+                    <div class="mb-3">
+                        {{ form_label(form.city) }}
+                        {{ form_widget(form.city) }}
+                    </div>
+                    <div class="mb-3">
+                        {{ form_label(form.email) }}
+                        {{ form_widget(form.email) }}
+                    </div>
+                    <div class="mb-3">
+                        {{ form_label(form.phone) }}
+                        {{ form_widget(form.phone) }}
+                    </div>
+                {% endif %}
+                <div id="sandbox-container" class="mb-3">
+                    {{ form_label(form.start_time) }}
+                    {{ form_widget(form.start_time) }}
+                </div>
+                {{ form_widget(form.save) }}
+                {{ form_end(form) }}
+            </form>
+        </div>
+    </section>
+{% endblock %}
+
+{% block javascripts %}
+    <script src="{{ asset('jquery-3.6.0.min.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#sandbox-container input').datepicker({
+                format: "dd/mm/YYYY",
+                maxViewMode: 1,
+                clearBtn: true,
+                language: "fr",
+                multidate: true,
+                daysOfWeekHighlighted: "5",
+                autoclose: true,
+                datesDisabled: ['09/06/2021', '09/21/2021'],
+                toggleActive: true
+            });
+        });
+    </script>
+{% endblock %}
